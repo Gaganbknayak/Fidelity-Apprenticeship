@@ -1,12 +1,33 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Employee e1 = new Employee(101,"Gagan");
-        FullTime ft = new FullTime(111,"Ajith",20000,2024);
-        PartTime pt = new PartTime(200,"Sumanth",10);
-        System.out.println(e1.getName());
-        System.out.println(ft.getName());
-        System.out.println(pt.getName());
+        Scanner sc = new Scanner(System.in);
+        int mark = sc.nextInt();
+        int grade = mark/10;
+        switch (grade) {
+            case 10:
+            case 9:
+                System.out.println("A1 grade");
+                System.out.println("Exellent");
+                break;
+                case 8:
+                    System.out.println("A grade");
+                    System.out.println("Very Good");
+                    break;
+                    case 7:
+                        System.out.println("B");
+                        System.out.println("Good");
+                        break;
+            default:
+                if(mark>=0 && mark<=70){
+                    System.out.println("C grade");
+                    System.out.println("need to improve");
+                    break;
+                }
+                else{
+                    System.out.println("invalid");
+                }
         }
     }
+}
