@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookzone Library - Book Form</title>
+</head>
+<body>
+
+    <h1>A Simple Form</h1>
+    <h2>Form Fundamentals</h2>
+
+    <form id="bookform" onsubmit="submitForm(event)" autocomplete="on">
+
+        <fieldset>
+            <legend>Customer Info</legend>
+
+            <label for="cusname">Name:</label>
+            <input type="text" id="cusname" name="cusname" placeholder="Enter your name" required autofocus><br><br>
+            <label for="telephone">Telephone:</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Pattern: +91 9980134571"
+                   pattern="\+91 [0-9]{10}" required><br><br>
+
+            <label for="mail">Email address:</label>
+            <input type="email" id="mail" name="mail" placeholder="Enter your email address" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Books</legend>
+
+            <label for="book">Book:</label>
+            <input list="books" id="book" name="book" required>
+            <datalist id="books">
+                <option value="Clean Code by Robert C. Martin">
+                <option value="Refactoring by Martin Fowler">
+                <option value="Head First HTML5 Programming - Eric Freeman">
+                <option value="Learn Python the Hard way by Zed A. Shaw">
+            </datalist>
+
+            <label for="quantity">Quantity (Maximum 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" required><br><br>
+        </fieldset>
+
+        <input type="submit" name="submit" value="Submit">
+
+    </form>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            alert("You have successfully submitted the Book Form");  
+        }
+    </script>
+
+</body>
+</html>

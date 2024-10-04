@@ -1,0 +1,50 @@
+h1 {
+    text-align: center; 
+    color: #FF00FF; 
+    font-style: italic; 
+}
+
+table {
+    margin-left: 35%; 
+    background-color: #F0F0F0; 
+    border-collapse: collapse; 
+    width: 60%; 
+}
+
+td {
+    text-align: left; 
+    padding: 10px; 
+}
+
+caption {
+    font-weight: bold; 
+    margin-bottom: 10px; 
+}
+
+.thead {
+    background-color: #800000; 
+    color: #FFFFFF;
+    text-align: left; 
+}
+
+.trl {
+    background-color: #ff0080; 
+}
+
+#exl {
+    background-color: #00ff00; 
+}
+#vgl {
+    background-color: #00ff00; 
+}
+#gol {
+    background-color: #ffff00; 
+}
+#avl {
+    background-color: #d3d3d3; 
+    color: #ffffff; 
+}
+#bal {
+    background-color: #ff0000; 
+    color: #ffffff; 
+}
