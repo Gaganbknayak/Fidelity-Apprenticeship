@@ -1,0 +1,31 @@
+CREATE TABLE salesman (
+    SALESMAN_ID NUMERIC(5) PRIMARY KEY,
+    NAME VARCHAR(30),
+    CITY VARCHAR(15),
+    COMMISSION DECIMAL(5,2)
+);
+
+CREATE TABLE orders (
+    ORD_NO NUMERIC(5) PRIMARY KEY,
+    PURCH_AMT DECIMAL(8,2),
+    ORD_DATE DATE,
+    CUSTOMER_ID NUMERIC(5),
+    SALESMAN_ID NUMERIC(5),
+    FOREIGN KEY (SALESMAN_ID) REFERENCES salesman(SALESMAN_ID)
+);
+
+INSERT INTO salesman (SALESMAN_ID, NAME, CITY, COMMISSION) VALUES 
+(101, 'John Doe', 'New York', 0.15),
+(102, 'Jane Smith', 'Los Angeles', 0.12),
+(103, 'Alice Johnson', 'Chicago', 0.10),
+(104, 'Bob Brown', 'Houston', 0.18);
+
+
+INSERT INTO orders (ORD_NO, PURCH_AMT, ORD_DATE, CUSTOMER_ID, SALESMAN_ID) VALUES 
+(1001, 5000.00, '2024-10-01', 201, 101),
+(1002, 3000.50, '2024-10-02', 202, 102),
+(1003, 7000.00, '2024-10-03', 203, 103),
+(1004, 1200.75, '2024-10-04', 204, 104);
+
+select * from salesman;
+select * from orders;
