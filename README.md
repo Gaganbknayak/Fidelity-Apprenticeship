@@ -18,6 +18,11 @@ after clicking submit button
 question2 Ll
 ![LLQ2](https://github.com/user-attachments/assets/c46b06d7-5398-491b-ad64-996516733d73)
 
+Assignment 4 output snapshot
+question 1
+![q1plsql](https://github.com/user-attachments/assets/b6a47136-9eb4-40b3-9461-1f9d4e5283d6)
+question 2
+![q2plsql](https://github.com/user-attachments/assets/fe57ea5e-99e9-4ab2-8110-018b644bafaa)
 
 
 
